@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    border: 0;
+    background-color: #5BC0BE;
+}
+
+body{
+    background-color: #5BC0BE;
+}
+
+table {
+    color: #272727; /* Lighten up font color */
+    font-family: Righteous; /* Nicer font */
+    width: 100%;/*640px;*/
+    border-collapse:collapse;
+    border-spacing: 0;
+    background-color: #5BC0BE;
+}
+
+td, th {
+    border: 4px solid #272727;
+    height: 30px;
+    text-align: center;
+
+} /* Make cells a bit taller */
+
+th {
+    background: #FED766; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+    background: #FAFAFA;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5BC0BE;
+}
+
+.title{
+    text-align: center;
+    font-family: Lobster;
+    font-size: 60px;
+    color: #272727;
+}
+
+.table{
+    background-color: #5BC0BE;
+    width: 100%;
+}
+#seq{
+    background-color: #EB606C;
+}

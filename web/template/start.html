@@ -1,0 +1,39 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="{%static "start.css" %}">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Lobster|Permanent+Marker|Righteous&display=swap" rel="stylesheet">
+
+
+        <script src="{%static "js/jquery.js" %}"></script>
+        <script src="{%static "js/bootstrap.min.js" %}"></script>
+
+
+        <title></title>
+    </head>
+    <body>
+        <div class="presentation">
+            <h3>VIDEO-EMOTION-APP.</h3>
+            <h4>Ciao! Benvenuto in emotion-app!</h4>
+            <h4>Emozionati con noi guardando i nostri video!</h4>
+            <h4>Condividi con noi le tue emozioni e scopri cosa hanno provato gli altri utenti</h4>
+            <h4>- useremo un rilevatore facciale per scoprire cosa stai provando -</h4>
+            <a href="home" id="choice">
+            <button type="submit" id="startbtn" name="signin">
+                <b>START</b>
+            </button>
+            </a>
+        </div>
+
+        <div id='stars' class="star"></div>
+        <div id='stars2' class="star"></div>
+        <div id='stars3' class="star"></div>
+
+
+
+    </body>
+</html>

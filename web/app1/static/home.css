@@ -1,0 +1,572 @@
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Lobster|Permanent+Marker|Righteous, helvetica&display=swap" rel="stylesheet">
+
+*{
+    background-color: #272727;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Righteous, helvetica, sans-serif;
+    overflow: auto;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: #272727;
+    box-sizing: border-box;
+    font-family: Arial;
+    max-width: 100vw;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    font-weight: bolder;
+    background-color: white;
+}
+
+header .main-page-title {
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #272727;
+}
+
+body .top-title {
+    margin: 0;
+    background-color: #5BC0BE; /*009FB7 /*1C2541*/ /*1a659e*/
+    color: #272727;
+    font-size: 16px;
+    overflow: auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body .top-title .content {
+    margin: 0;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+body .top-title h3 {
+    font-size: 17px;
+    font-weight: 730;
+    padding-left: 30px;
+    flex: 2;
+}
+
+
+body .top-title a {
+    margin-top: 8px;
+    margin-right: 10vh;
+    border: solid 2px #272727;
+    color: #272727;
+    font-weight: 620;
+    margin-left: 35px;
+    padding: 8px;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    flex: 1;
+    justify-content: flex-end;
+
+}
+
+.al{
+    margin-top: 8px;
+    margin-right: 10vh;
+    border: solid 2px #272727;
+    color: #272727;
+    font-weight: 620;
+    margin-left: 35px;
+    padding: 8px;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    flex: 1;
+    justify-content: flex-end;
+
+}
+
+
+body .top-title a:hover {
+    background-color: ##404040;
+    color: #5BC0BE;
+}
+
+#dot{
+    color: #5BC0BE !important;
+}
+
+.col{
+    font-size: 70%;
+}
+
+#myNav{
+    overflow: hidden;
+}
+
+#span{
+    overflow: hidden;
+    display: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  border:none;
+}
+
+.overlay-content a{
+    border: none;
+}
+
+.closebtn{
+    border: none;
+}
+
+#li-menu a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border:none;
+}
+
+#li-menu :hover, .li-menu a:focus  {
+  color: #f1f1f1;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.line{
+  width: 35px;
+  height: 5px;
+  background-color: #5BC0BE;
+  margin: 6px 0;
+}
+
+#span{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #272727;
+}
+
+
+
+.dropbtn button{
+    display:none;
+}
+
+.header{
+    float: left;
+    font-family: Lobster;
+}
+
+#adv{
+    font-size: 30px;
+}
+
+.dropbtn{
+    justify-content: right;
+}
+
+#myDropdown a{
+    font-size: 18px;
+
+    padding: 6px;
+    margin-left: 15px;
+    margin-right: 0px;
+    color:  white;
+    border-radius: 10px;
+    border: none;
+    background-color: #5BC0BE;
+
+}
+
+#myDropdown a:hover{
+    font-size: 18px;
+
+    padding: 6px;
+    margin-left: 15px;
+    margin-right: 0px;
+    color:  white;
+    border-radius: 10px;
+    border: none;
+    background-color: #272727;
+
+}
+
+.dropdown-content{
+    display: flex;
+    flex-direction: row;
+    float: right;
+
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 5px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 30%
+}
+
+/* The Close Button */
+.close {
+  width: 10px;
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.close:hover, .close:focus {
+  border: 0;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#btnTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #5BC0BE; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#btnTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+    background-color: #272727;
+    overflow: auto;
+}
+
+video{
+    weight: 300px;
+    height: 160px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.col1{
+    flex-grow: 1;
+}
+
+.col2{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.col1-title{
+    text-align: left;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.col1-title h2{
+    font-family: Lobster;/*, Abril, Fatface, Anton, Permanent+Marker, Righteous, helvetica*/
+    font-size: calc(40px + (19 - 18) * ((100vw - 320px) / (1200 - 320)));
+    color: #EFF1F3;
+}
+
+h2:hover{
+    text-decoration: none;
+}
+
+.col1-title h2:hover{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #FED766;
+}
+
+.col2-tot{
+    display: flex;
+    flex-direction: row;
+    font-family: Lobster;
+    margin-top:14px;
+}
+
+.col2-buttonStat button{
+  background-color:  #FED766;/*#F9B784*/
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.col2-download button{
+    background-color:  #FED766;/*#F9B784*/
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.col2-buttonStat button:hover{
+    background-color: #E63946;
+    outline: none;
+}
+
+.col2-download button:hover{
+    background-color: #E63946;
+    outline: none;
+}
+
+
+.col2-download{
+    padding-left: 10px;
+}
+
+.row-description{
+    text-align: justify;
+    padding-left: 10px;
+    color: #EFF1F3;
+}
+
+hr{
+    border: 1px solid #404040;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1100px){ /* per menu allineato*/
+
+    .myNavBig{
+        display: none;
+    }
+
+    #span{
+        display: block;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+}
+
+@media only screen and (max-width: 790px){
+
+    .myNavBig{
+        display: none;
+    }
+
+    #span{
+        display: block;
+    }
+
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+.col1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .video-box{
+        width: 60%;
+        height: auto;
+    }
+
+    video{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .col2{
+        flex-grow: 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+.row-title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col1-title{
+        padding-left: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .col1-title h2{
+        /*font-family: Lobster;/*, Abril, Fatface, Anton, Permanent+Marker, Righteous, helvetica*/
+        font-size: calc(40px + (19 - 18) * ((100vw - 320px) / (1200 - 320)));
+        color: #EFF1F3;
+    }
+
+    .col1-title h2:hover{
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        text-decoration-color: gray;
+    }
+
+    .col2-tot{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-family: Lobster;
+    }
+
+    .col2-download{
+        padding-left: 10px;
+    }
+
+    .row-description{
+        text-align: justify;
+        padding-left: 10px;
+        color: #EFF1F3;
+    }
+
+
+
+
+
+
+    /*body{
+        background-color: red;
+    }*/
+}
+
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 580px){
+
+
+
+    .row-description{
+        max-width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        color: #EFF1F3;
+    }
+
+    .row-description h4{
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    /*body{
+        background-color: blue;
+    }*/
+}

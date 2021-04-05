@@ -1,0 +1,141 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Lobster|Permanent+Marker|Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{%static "css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{%static "getStat.css" %}">
+
+    <script src="{%static "js/jquery.js" %}"></script>
+    <script src="{%static "js/bootstrap.min.js" %}"></script>
+    <script src="{%static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{%static "js/bootstrap.bundle.min.js" %}"></script>
+
+  <title>Statistics</title>
+</head>
+
+<body>
+    <div class="container">
+
+    <div class="title">
+    {{Video.title}}
+
+    </div>
+
+      <div class="table">
+
+          <table style="width:100%">
+              <tr>
+                  <th id="seq">Sequenza</th>
+                  <th>Arrabbiati</th>
+                  <th>Felici</th>
+                  <th>Tristi</th>
+                  <th>Disgustati</th>
+                  <th>Sorpresi</th>
+                  <th>Annoiati</th>
+                  <th>Impauriti</th>
+              </tr>
+
+              {% for s in Stat %}
+              <tr>
+                   <td>{{s.sequence}}</td>
+                   <td>{{s.arrabbiato}}</td>
+                   <td>{{s.felice}}</td>
+                   <td>{{s.triste}}</td>
+                   <td>{{s.disgustato}}</td>
+                   <td>{{s.sorpreso}}</td>
+                   <td>{{s.annoiato}}</td>
+                   <td>{{s.impaurito}}</td>
+              <tr>
+              {% endfor %}
+
+          </table>
+
+      </div>
+          </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="{%static "css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{%static "saveData.css" %}">
+
+
+  <script src="{%static "js/jquery.js" %}"></script>
+  <script src="{%static "js/bootstrap.min.js" %}"></script>
+
+  <title>Riassunto</title>
+
+</head>
+
+<body>
+
+        <div id = 'bar'>
+                   <h3>Riassunto</h3>
+               <a href="{{Video.pk}}" id = 'back'>Ritorna al video</a>
+          </div>
+
+
+          {% for a in nClient %}
+                  Utenti : {{a.nC}}
+          {% endfor %}
+
+   <table>
+
+              <tr><th></th>  <tr><th></th>
+              {% for a in seq %}
+                      <th>Sequenza: {{a.sequence}}</th>
+              {% endfor %}<tr>
+
+
+              {% for eA in emArray %}
+                      <tr><th>{{eA}}</th>
+                      {% for a in seq %}
+
+                            {% for e in em %}
+                                    {% if a.sequence == e.sequence  %}
+                                          {% if  e.emotion == eA %}
+                                      <td>{{e.nEmotion}}</td>
+                                          {% endif %}
+                                    {% endif %}
+
+                          {% endfor %}
+
+                    {% endfor %}
+              {% endfor %}</tr>
+  </table>
+
+
+
+
+    <script src= "{%static "saveData.js" %}" ></script>
+  </body>
+  </html>
+-->

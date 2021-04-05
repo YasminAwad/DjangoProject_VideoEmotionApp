@@ -1,0 +1,459 @@
+body {
+    margin: 0;
+    background-color: #272727;
+    box-sizing: border-box;
+    max-height: 100%;
+
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#top-container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+  font-family: Righteous;
+  overflow: hidden;
+  outline: none;
+  max-height: 100%;
+
+}
+
+body .top-title {
+    background-color: #5BC0BE;
+    color: #fff;
+    font-size: 100%;
+    overflow: auto;
+    width: 100%;
+    padding: 1%;
+}
+
+body .top-title .content {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body .top-title h3 {
+    font-size: 50%;
+    font-weight: 730;
+    color: #272727;
+    flex: 2;
+    font-family: Lobster;
+}
+
+@media screen and (min-width: 700px) {
+  body .top-title h3 {
+     font-size: 40px;
+  }
+}
+#loading{
+  font-family: Righteous;
+  width: 25%;
+  border-radius: 10px;
+  color: black;
+  background: #FED766;
+  display: none;
+  padding: 0.3%;
+  border: 4px solid #272727;
+}
+
+#loading a{
+  margin-left: 5%
+}
+
+#loading-box2{
+  display: none;
+}
+
+#loading2{
+  display: none;
+  font-family: Righteous;
+  width: 70%;
+  border-radius: 10px;
+  color: black;
+  background: #FED766;
+  padding: 0.1%;
+  border: 3px solid #272727;
+}
+
+#loading2 a{
+  margin-left: 5%
+}
+
+/*DROPDOWN BOTTON MENU*/
+
+/* Dropdown Button */
+.dropbtn {
+  background: #0A50A3;
+  color: white;
+  margin-left: 16%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 10%;
+  font-size: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: Righteous;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover{
+    opacity: .9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+
+  margin-top: 2.4%;
+  color: black;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 9%;
+  box-shadow: 0px 4px 7px 0px #009bff;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding-bottom:5%;
+
+  text-decoration: none;
+  display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content #choice:hover {
+    background-color: #009bff;
+    color: black;
+}
+
+#choice{
+    border-radius: 10px;
+    color: black;
+}
+
+.dropdown-content #modelP:hover {
+    background-color: #009bff;
+    color: black
+}
+
+#modelP{
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*                              VIDEO                                     */
+.video-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#video{
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.video-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#video-controls {
+  margin-top: 0.01%;
+  z-index: 99;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  background: #5BC0BE;
+  padding-top: 0.5%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+#video-controls button{
+  background: #FED766;
+  color: #272727;
+  border-radius: 10px;
+  border:3px solid #272727;
+}
+
+#box-c-sx, #box-c-sx{
+  width: 30%;
+}
+
+
+#play-pause, #mutebtn{
+  width: 20%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input#volumeslider{ width:20%;}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+    border:#666 1px solid;
+    height:4px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    height:15px;
+    width:15px;
+    border-radius:100%;
+    cursor:pointer;
+}
+
+/*                            Question                               */
+
+#question {
+  position: absolute;
+  margin-left: 86%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  display: none;
+  z-index: 99;
+}
+
+#question img{
+  margin-bottom: 3%;
+}
+
+#box-q{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 80%;
+  padding: 0.2%;
+  border-radius: 9px;
+}
+
+#box-text{
+  display: flex;
+  flex-direction: column;
+  background: #5BC0BE;
+  border: none;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-radius: 9px;
+  text-align: center;
+}
+
+#box-button{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: none;
+  border-radius: 9px;
+  padding: 5%;
+}
+
+#box-button button{
+  text-align:left;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 9px;
+}
+
+#question button:hover{
+  background: #FED766;
+}
+
+
+
+/*                              video fullscreen                       */
+:-webkit-full-screen #video {
+  width: 93%;
+  margin-bottom: 0.05%;
+}
+:-moz-full-screen  #video{
+  width: 93%;
+  margin-bottom: 0.05%;
+}
+:-ms-fullscreen  #video{
+  width: 93%;
+  margin-bottom: 0.05%;
+}
+:fullscreen #video{
+  width: 93%;
+  margin-bottom: 0.05%;
+}
+/* ---*/
+:-webkit-full-screen .top-title {
+  display: none;
+}
+:-moz-full-screen  .top-title{
+  display: none;
+}
+:-ms-fullscreen  .top-title{
+  display: none;
+}
+:fullscreen .top-title{
+  display: none;
+}
+//
+:-webkit-full-screen #video-controls {
+  padding-top: 0.5%;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-bottom: 1%;
+  justify-content: space-between;
+}
+:-moz-full-screen  #video-controls {
+  padding: 0.3%;
+  justify-content: space-between;
+}
+:-ms-fullscreen  #video-controls {
+  padding: 0.3%;
+  justify-content: space-between;
+}
+:fullscreen #video-controls {
+  padding: 0.3%;
+  justify-content: space-between;
+}
+//
+:-webkit-full-screen  #box-c-sx{
+  margin-left: 5%;
+}
+:-moz-full-screen  #box-c-sx{
+  margin-left: 5%;
+}
+:-ms-fullscreen  #box-c-sx{
+  margin-left: 5%;
+}
+:fullscreen #box-c-sx{
+margin-left: 5%;
+}
+
+:-webkit-full-screen  #box-c-dx{
+  margin-right: 5%;
+}
+:-moz-full-screen  #box-c-dx{
+    margin-right: 5%;
+}
+:-ms-fullscreen #box-c-dx{
+    margin-right: 5%;
+}
+:fullscreen #box-c-dx{
+    margin-right: 5%;
+}
+
+/* Loading */
+
+:-webkit-full-screen  #loading-box2{
+  display: block;
+}
+:-moz-full-screen  #loading-box2{
+  display: block;
+}
+:-ms-fullscreen #loading-box2{
+    display: block;
+}
+:fullscreen #loading-box2{
+    display: block;
+}
+
+/* Question */
+
+:-webkit-full-screen  #question{
+  margin-left:83%;
+  width: 14%;
+}
+:-moz-full-screen  #question{
+  display: block;
+}
+:-ms-fullscreen #question{
+    display: block;
+}
+:fullscreen #question{
+    display: block;
+}
+
+
+
+/*@media only screen and (max-width: 1200px) {
+  #top-container{
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+    background: red;
+
+  }
+
+@media only screen and (max-width: 1150px) {
+  #top-container{
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+    background: yellow;
+
+  }
+
+  #video{
+    width: 75%;
+
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  #top-container{
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+    background: orange;
+
+  }
+
+  #video{
+
+    width: 80%;
+
+  }
+}
+*/
