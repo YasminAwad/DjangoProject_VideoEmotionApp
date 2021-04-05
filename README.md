@@ -1,6 +1,6 @@
 # DjangoProject_VideoEmotionApp
 
-This project was carried out in 2019 toghether with Niki Di Costanzo.
+This project was carried out in 2019 toghether with [Niki Di Costanzo](https://github.com/NikiDicostanzo).
 
 ## Goals:
 - allow video playback
